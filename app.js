@@ -1,3 +1,12 @@
-const log = require("./logger");
+const os = require("os");
 
-log("message");
+var totalMemory = os.totalmem();
+var freeMemory = os.freemem();
+
+console.log(`Total Memory: ` + totalMemory);
+
+//Template string
+//ES6
+
+console.log(`Total Memory: ${totalMemory}`);
+console.log(`Free Memory: ${freeMemory}`);
